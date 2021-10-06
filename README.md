@@ -18,22 +18,22 @@ After querying desired pokemon data run the API which takes as parameter the nam
 - Setup local database by using django migrations
 
     ```sh
-    python ./manage.py makemigrations
-    python ./manage.py migrate
+    python Pokemon/manage.py makemigrations
+    python Pokemon/manage.py migrate
     # This will setup the local database based on django models. Make sure you are in the same directory as manage.py file
     ```
 
 - Fetch and store information manually by using the query.py file or fetch and store all evolution-chains and pokemon by running the massquery.py file as follows:
 
     ```sh
-    python ./manage.py shell < massquery.py
+    python Pokemon/manage.py shell < Pokemon/massquery.py
     # This will fetch and store pokemon information. Make sure you are in the same directory as manage.py and massquery.py.
     ```
 
 - Run the server as follows:
 
     ```sh
-    python ./manage.py runserver
+    python Pokemon/manage.py runserver
     ```
 
 - If your development server is at localhost then you can acces the api by using:

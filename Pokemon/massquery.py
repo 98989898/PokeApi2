@@ -25,7 +25,6 @@ def fetch_pokemon_and_evos(chaindata, pre_id):
     if response.status_code==200:
         speciesdata = json.loads(response.text)
         id = speciesdata['id']
-        print('Fetched and stored pokemon with id: ',id)
     else:
         raise ChildProcessError('No species data')
 
@@ -63,4 +62,5 @@ def fetch_pokemon_and_evos(chaindata, pre_id):
 
 # There are less than 480 chains
 for i in range(480):
-    fetch_chain(i)
+    if(fetch_chain(i)):
+        print('Fetched and stored pokemon chain: ',i)

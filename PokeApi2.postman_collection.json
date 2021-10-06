@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "fda3bb02-387b-4e49-bd37-6a89a1160ae2",
+		"name": "PokeApi2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pokemon Information",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/{{pokemon_name}}",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"{{pokemon_name}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Pokemon Information for Eevee",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/{{pokemon_name}}",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"{{pokemon_name}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 06 Oct 2021 13:39:26 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "589"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"eevee\",\n    \"id\": 133,\n    \"height\": 3,\n    \"weight\": 65,\n    \"hp\": 55,\n    \"attack\": 55,\n    \"defense\": 50,\n    \"special-attack\": 45,\n    \"special-defense\": 65,\n    \"speed\": 55,\n    \"evolutions\": [\n        {\n            \"id\": 134,\n            \"name\": \"vaporeon\",\n            \"evolutions\": []\n        },\n        {\n            \"id\": 135,\n            \"name\": \"jolteon\",\n            \"evolutions\": []\n        },\n        {\n            \"id\": 136,\n            \"name\": \"flareon\",\n            \"evolutions\": []\n        },\n        {\n            \"id\": 196,\n            \"name\": \"espeon\",\n            \"evolutions\": []\n        },\n        {\n            \"id\": 197,\n            \"name\": \"umbreon\",\n            \"evolutions\": []\n        },\n        {\n            \"id\": 470,\n            \"name\": \"leafeon\",\n            \"evolutions\": []\n        },\n        {\n            \"id\": 471,\n            \"name\": \"glaceon\",\n            \"evolutions\": []\n        },\n        {\n            \"id\": 700,\n            \"name\": \"sylveon\",\n            \"evolutions\": []\n        }\n    ],\n    \"preevolutions\": []\n}"
+				},
+				{
+					"name": "Pokemon Information for Charmeleon",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/{{pokemon_name}}",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"{{pokemon_name}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 06 Oct 2021 13:55:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "275"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"charmeleon\",\n    \"id\": 5,\n    \"height\": 11,\n    \"weight\": 190,\n    \"hp\": 58,\n    \"attack\": 64,\n    \"defense\": 58,\n    \"special-attack\": 80,\n    \"special-defense\": 65,\n    \"speed\": 80,\n    \"evolutions\": [\n        {\n            \"id\": 6,\n            \"name\": \"charizard\",\n            \"evolutions\": []\n        }\n    ],\n    \"preevolutions\": [\n        {\n            \"id\": 4,\n            \"name\": \"charmander\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}

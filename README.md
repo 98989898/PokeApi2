@@ -1,8 +1,8 @@
 # Pokemon 
 
-This repo contains a command fetch_chain that receives as its paramenter an ID, representing the Evolution Chain and stores the given evolution chain by querying the data from the [PokeApi](https://pokeapi.co/). It also contains a script massquery.py that queries and stores data for all evolutionary chains. 
+This repo contains a command fetch_chain in the query.py file, that receives as its paramenter an ID, representing the Evolution Chain and stores the given evolution chain by querying the data from the [PokeApi](https://pokeapi.co/). It also contains a script massquery.py that queries and stores data for all evolutionary chains. 
 
-It also contains an API which takes as parameter the name of a Pokemon and returns the Pokemon's information.
+After querying desired pokemon data run the API which takes as parameter the name of a Pokemon and returns the Pokemon's information.
 
 ## Setup &nbsp; [![pyVersion37](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-397/)
 
@@ -38,6 +38,6 @@ It also contains an API which takes as parameter the name of a Pokemon and retur
 
 - If your development server is at localhost then you can acces the api by using:
 
-http://127.0.0.1:8000/ditto/
+http://127.0.0.1:8000/charmander/
 
 You can change the name of the pokemon and the ip/url depending on your local settings and the name of the desired pokemon. 

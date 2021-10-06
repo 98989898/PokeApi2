@@ -6,6 +6,11 @@ base_url = 'https://pokeapi.co/api/v2/evolution-chain/'
 
 
 def fetch_chain(chain_id):
+    """Fetch and store the pokemon evolution chain represented by the argument.
+    
+    :param int chain_id: id of pokemon evolution chain
+    :return: returns true if pokemon evolution chain was succesfully stored, false otherwise
+    """
     url = base_url + str(chain_id) + '/'
     response = requests.get(url)
     if response.status_code==200:
@@ -16,7 +21,13 @@ def fetch_chain(chain_id):
         return False
 
 def fetch_pokemon_and_evos(chaindata, pre_id):
-    # Fetch Pokemon Data from Chain Data
+    """Fetch and store the pokemon and its evolutions recursively from a chaindata.
+
+    :param dictionary chaindata: dictionary containing evolution chain data
+    :param int pre_id: id of pokemon's pre evolution, 0 if pokemon has no pre evolutions
+    :return: current pokemon's id
+    :raises ChildProcessError: if there's an error fetching pokemon data
+    """
     name = chaindata['species']['name']
     
     url = chaindata['species']['url'] 

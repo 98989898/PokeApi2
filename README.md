@@ -36,7 +36,7 @@ After querying desired pokemon data run the API which takes as parameter the nam
     python Pokemon/manage.py runserver
     ```
 
-- If your development server is at localhost then you can acces the api by using:
+- If your development server is at localhost then you can access the api by using:
 
 http://127.0.0.1:8000/charmander/
 
